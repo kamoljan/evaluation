@@ -1,4 +1,4 @@
-\documentclass[conference]{/Users/kamol/Dropbox/PhD/papers/IEEEtran2/IEEEtran}
+\documentclass[conference]{./common/IEEEtran}
 
 
 \usepackage{listings} % source code
@@ -14,8 +14,7 @@
 \title{Evaluation for Viki.com}
 \author{
 \IEEEauthorblockN{Kamol Mavlonov}
-\IEEEauthorblockA{Candidate}
-\{{kamol\}@gmail.com}
+\{{kamoljan\}@gmail.com}
 }
 
 \maketitle
@@ -42,49 +41,33 @@ Moreover, additional evaluation results are taking from Google {pagespeed}[2] an
 \begin{minipage}[b]{\linewidth}\centering
 \includegraphics[width=\textwidth]{include/gnu/10_10.png}
 \end{minipage}
-\caption{1000 repeateation with 100 concurent request.}
+\caption{10 requests with 10 concurrent connections.}
 \label{fig:my_read_latency}
 \end{figure}
-
 
 \begin{figure}[ht]
 \begin{minipage}[b]{\linewidth}\centering
 \includegraphics[width=\textwidth]{include/gnu/1000_100.png}
 \end{minipage}
-\caption{1000 repeateation with 100 concurent request.}
+\caption{1000 request with 100 concurrent connections.}
 \label{fig:my_read_latency}
 \end{figure}
 
-
-\subsection{Berniaga image vs Berniaga Middle image}
-
-%\section{Reproduce critical bugs}
-%\subsection{Facebook ID collisions}
-%\subsection{Image load issue}
-
 \section{Conclusion} 
-{\bf Overall Network evaluation.}
 
 \section{Acknowledgment}
 The authors would like to thank Viki team for their hard work.
 
 \begin{thebibliography}{1}
-
 \bibitem{IEEEhowto:siege}
 http://www.joedog.org/siege-home/
-
 \bibitem{IEEEhowto:pagespeed}
 https://developers.google.com/speed/pagespeed/
-
 \bibitem{IEEEhowto:yslow}
 http://developer.yahoo.com/yslow/
-
-
 \bibitem{IEEEhowto:ab}
 http://httpd.apache.org/docs/2.2/programs/ab.html
-
 \end{thebibliography}
-
 
 \end{document}
 

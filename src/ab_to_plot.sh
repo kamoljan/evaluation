@@ -4,6 +4,11 @@ CONCURRENCY=$2
 URL=$3
 FILE_NAME=$4
 
+if [ $# -ne 4 ]; then
+    echo "Usage: $0 [requests] [concurrency] [url] [png]"
+    exit 1
+fi
+
 echo 'Request ' $REQUESTS
 echo 'Concurrency ' $CONCURRENCY
 echo 'URL ' "$URL"
